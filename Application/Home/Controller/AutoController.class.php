@@ -8,7 +8,7 @@ class AutoController extends Controller
 
     public $order_price;
     public $upMoney;    //最高价
-    public $stopLessMoney;    //止损价
+    public $stopLessMoney;    //止损价  ggggg
     public $symbol;
     public $price_precision;
     public $amount_precision;
