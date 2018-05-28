@@ -1,0 +1,123 @@
+<<<<<<< HEAD
+<html>
+    <header>
+    	<title>下单操作</title>
+    	<meta charset="utf-8">
+    </header>
+    <script src="__PUBLIC__/js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <body>
+    <br><br>
+        <div style="border:1px green solid;width:600px;height:80px;margin:0 auto;" id="lis">
+	        	<div style="color:red;">qqqq</div>
+	        	<div style="color:red;">dddd</div>
+	    </div>
+    	<div style="width:600px;height:300px;margin:0 auto;">
+    	    <form action="" method="post">
+    		<table border="1" cellspacing=0 style="width:600px;height: 300px;">
+    			<tr>
+    				<td>币对:</td><td><input type="text" name="bt_name1" value=""> - <input type="text" name="bt_name2" value=""></td>
+    			</tr>
+    			<tr>
+    				<td>当前价格:</td><td><input type="text" name="presentPrice" value=""></td>
+    			</tr>
+    			<tr>
+    				<td>金额:</td><td><input type="text" name="bt_price" value=""></td>
+    			</tr>
+    			<tr>
+    				<td>最高价:</td>
+    				<td><input type="text" name="maxUnitMoney" value=""></td>
+    			</tr>
+    			<tr>
+    				<td>最低价:</td>
+    				<td><input type="text" name="minUnitMoney" value=""></td>
+    			</tr>
+    			<!-- <tr>
+    				<td>最大金额:</td><td><input type="text" name="maxUnitMoney" value="max"></td>
+    			</tr>
+    			<tr>
+    				<td>最小金额:</td><td><input type="text" name="minUnitMoney" value="min"></td>
+    			</tr> -->
+    			<tr>
+    				<td colspan="2"><input type="submit" value="提交" style="margin-left:250px;"></td>
+    			</tr>
+    		</table>
+    		</form>
+    	</div>
+    </body>
+    <script>
+        var int=self.setInterval("dj()",5000);
+        function dj(){
+        	var str = '';
+        	$.get("http://47.52.24.143/quantitative-s/index.php?s=Home/index/ajax",{'task_id':5555},function(json){
+        		if(json.status == 1){
+        			if(json.info == 10){
+        		    }else{
+                        document.getElementById('lis').innerText = json.info;
+        		    }
+        		}
+        	});
+        }
+    </script>
+</html>
+=======
+<html>
+    <header>
+    	<title>下单操作</title>
+    	<meta charset="utf-8">
+    </header>
+    <script src="__PUBLIC__/js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <body>
+    <br><br>
+        <div style="border:1px green solid;width:600px;height:80px;margin:0 auto;" id="lis">
+	        	<div style="color:red;">qqqq</div>
+	        	<div style="color:red;">dddd</div>
+	    </div>
+    	<div style="width:600px;height:300px;margin:0 auto;">
+    	    <form action="" method="post">
+    		<table border="1" cellspacing=0 style="width:600px;height: 300px;">
+    			<tr>
+    				<td>币对:</td><td><input type="text" name="bt_name1" value=""> - <input type="text" name="bt_name2" value=""></td>
+    			</tr>
+    			<tr>
+    				<td>当前价格:</td><td><input type="text" name="presentPrice" value=""></td>
+    			</tr>
+    			<tr>
+    				<td>金额:</td><td><input type="text" name="bt_price" value=""></td>
+    			</tr>
+    			<tr>
+    				<td>最高价:</td>
+    				<td><input type="text" name="maxUnitMoney" value=""></td>
+    			</tr>
+    			<tr>
+    				<td>最低价:</td>
+    				<td><input type="text" name="minUnitMoney" value=""></td>
+    			</tr>
+    			<!-- <tr>
+    				<td>最大金额:</td><td><input type="text" name="maxUnitMoney" value="max"></td>
+    			</tr>
+    			<tr>
+    				<td>最小金额:</td><td><input type="text" name="minUnitMoney" value="min"></td>
+    			</tr> -->
+    			<tr>
+    				<td colspan="2"><input type="submit" value="提交" style="margin-left:250px;"></td>
+    			</tr>
+    		</table>
+    		</form>
+    	</div>
+    </body>
+    <script>
+        var int=self.setInterval("dj()",5000);
+        function dj(){
+        	var str = '';
+        	$.get("http://47.52.24.143/quantitative-s/index.php?s=Home/index/ajax",{'task_id':5555},function(json){
+        		if(json.status == 1){
+        			if(json.info == 10){
+        		    }else{
+                        document.getElementById('lis').innerText = json.info;
+        		    }
+        		}
+        	});
+        }
+    </script>
+</html>
+>>>>>>> 8cf79caa0432eb6749cf91983e65fb78a419a766
